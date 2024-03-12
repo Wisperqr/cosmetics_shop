@@ -1,0 +1,123 @@
+.wrapper {
+  margin: 0 30px;
+}
+
+.title {
+  margin: 0 30px 30px 30px;
+}
+
+.product {
+  display: flex;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+  padding: 5px;
+  border: 1px solid var(--corall);
+  color: var(--dark-deep-blue);
+  border-radius: 20px;
+  margin: 5px;
+  .imgDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    img {
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
+
+  p {
+    width: 100%;
+    margin: 0 30px;
+  }
+  h3 {
+    margin: 0 30px;
+    white-space: nowrap;
+  }
+
+  .deleteIcon {
+    margin-right: 30px;
+  }
+}
+
+.finalSum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 30px;
+  color: var(--dark-deep-blue);
+  h2 {
+    margin: 0 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .product {
+    margin: 0 20px;
+    h3 {
+      margin: 0 10px;
+    }
+    p {
+      margin: 0 10px;
+    }
+    .deleteIcon {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .product {
+    margin: 0 10px;
+    h3 {
+      font-size: 15px;
+      margin: 0 5px;
+    }
+    p {
+      font-size: 12px;
+      margin: 0 5px;
+    }
+  }
+
+  .finalSum {
+    margin: 20px 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    margin: 0;
+    h3 {
+      font-size: 14px;
+      margin: 0 3px;
+    }
+  }
+  .finalSum {
+    h2 {
+      padding: 0;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .finalSum {
+    button {
+      padding: 0;
+    }
+    h2 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+}

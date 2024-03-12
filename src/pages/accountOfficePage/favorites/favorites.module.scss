@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-deep-blue);
+  min-height: 90vh;
+  h1 {
+    margin-bottom: 10px;
+  }
+  .favoritesProducts {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin-left: 10px;
+    h1 {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.blogPageWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+
+  .allBlogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .line {
+      width: 100%;
+      border: 1px solid var(--dark-deep-blue);
+      z-index: 100;
+      opacity: 0.3;
+    }
+    h1 {
+      color: var(--dark-deep-blue);
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+
+    .blog {
+      display: flex;
+      margin: 20px 0;
+
+      .imageDiv {
+        cursor: pointer;
+        img {
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+      .textDiv {
+        padding: 20px;
+        max-width: 720px;
+        font-weight: 300;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: var(--dark-deep-blue);
+        h3 {
+          margin: 10px 0;
+        }
+        button {
+          width: 250px;
+          margin-top: 20px;
+          padding: 10px 15px;
+          background-color: var(--dark-deep-blue);
+          color: var(--font-white);
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .allBlogs {
+    .textDiv {
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .allBlogs {
+    p {
+      font-size: 14px;
+    }
+    .textDiv {
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .allBlogs {
+    p {
+      font-size: 13px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .allBlogs {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .allBlogs {
+    p {
+      display: none;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .allBlogs {
+    .blog {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+
+      .imgDiv {
+        width: 100%;
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .blogPageWrapper {
+    .allBlogs {
+      h1 {
+        margin: 0;
+      }
+
+      .blog {
+        width: 100%;
+        .textDiv {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

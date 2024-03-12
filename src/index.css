@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+
+  --dark-black: rgb(17, 17, 17, 0.4);
+  --font-dark-grey: rgb(39, 39, 39);
+  --light-green: rgb(82, 200, 84);
+  --font-white: rgb(234, 234, 234);
+  --discount: rgb(255, 141, 1);
+
+
+  --dark-deep-blue: #283347;
+  --deep-blue: #586c91;
+  --light-deep-blue: #8fa4c3;
+
+
+  --grey-blue: #7A8D9B;
+  --grey: #B2B9BF;
+  --light: #E3D4D0;
+  --light-corall: #EED0C6;
+  --corall: #DABEB6;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
+}

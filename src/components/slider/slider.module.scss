@@ -1,0 +1,289 @@
+.mySwiper {
+  background-image: url("./img/kosmetika.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+
+  .slide1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    height: 90vh;
+    position: relative;
+
+    img {
+      max-width: 700px;
+      position: absolute;
+      left: 50px;
+      top: 50px;
+    }
+
+    .slider1Content {
+      background-color: rgb(143, 164, 195, 0.4);
+      position: absolute;
+      right: 75px;
+      top: 75px;
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 25px;
+      h2 {
+        margin: 15px;
+        color: var(--dark-deep-blue);
+        font-size: 30px;
+      }
+      ul {
+        li {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 15px;
+          font-size: 20px;
+          color: var(--dark-deep-blue);
+          .icon {
+            color: var(--light-green);
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .slide2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    .waterCircle {
+      position: absolute;
+      left: 20px;
+    }
+    .cosmeticsSlide2 {
+      max-width: 800px;
+      position: absolute;
+      right: 0;
+      top: 75px;
+    }
+
+    .slider2Content {
+      background-color: rgb(143, 164, 195, 0.4);
+      width: 500px;
+      height: 500px;
+      padding: 20px;
+      border-radius: 250px;
+      margin-left: 115px;
+      margin-top: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 1;
+      h2 {
+        font-size: 30px;
+        margin: 15px;
+        color: var(--dark-deep-blue);
+      }
+      ul {
+        list-style-type: none;
+        li {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-size: 20px;
+          margin: 15px;
+          color: var(--dark-deep-blue);
+          .icon {
+            color: var(--light-green);
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 90vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1360px) {
+  .slide1 {
+    position: relative;
+    img {
+      position: absolute;
+      top: 90px;
+      width: 600px;
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  .slide1 {
+    img {
+      width: 500px;
+    }
+  }
+
+  .slide2 {
+    .cosmeticsSlide2 {
+      width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .slide2 {
+    .cosmeticsSlide2 {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .slide1 {
+    img {
+      display: none;
+    }
+    .slider1Content {
+      position: absolute;
+      left: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .mySwiper {
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  .mySwiper {
+    .slide2 {
+      .waterCircle {
+        left: 0;
+      }
+      .slider2Content {
+        margin-left: 90px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  .mySwiper {
+    .slide2 {
+      .waterCircle {
+        top: 50px;
+        width: 500px;
+      }
+      .slider2Content {
+        width: 400px;
+        height: 400px;
+        margin-left: 50px;
+        margin-top: 80px;
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mySwiper {
+    height: 60vh;
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+    .slide1 {
+      .slider1Content {
+        margin: 0;
+        position: absolute;
+        width: 290px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        padding: 0;
+        h2 {
+          text-align: center;
+        }
+      }
+    }
+
+    .slide2 {
+      .waterCircle {
+        top: 100px;
+        width: 400px;
+      }
+      .slider2Content {
+        width: 330px;
+        height: 330px;
+        margin-left: 40px;
+        margin-top: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mySwiper {
+    .slide2 {
+      .waterCircle {
+        max-width: 350px;
+        left: -15px;
+      }
+      .slider2Content {
+        width: 280px;
+        height: 280px;
+        margin-left: 30px;
+        h2 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .mySwiper {
+    height: 50vh;
+
+    .slide1 {
+      position: relative;
+      height: 50vh;
+      .slider1Content {
+        top: 130px;
+      }
+    }
+  }
+}

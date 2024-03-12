@@ -1,0 +1,125 @@
+.wrapper {
+  display: flex;
+  margin: 30px 30px;
+  min-height: 90vh;
+  color: var(--dark-deep-blue);
+
+  .imgDiv {
+    max-width: 600px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .productInfo {
+    max-width: 700px;
+    margin: 0 30px;
+    .priceDiv {
+      display: flex;
+      font-size: 18px;
+      margin: 20px 0;
+      .newPrice {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .oldPrice {
+        text-decoration: line-through;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+      }
+    }
+    .descriptionTitle {
+      display: flex;
+      align-items: center;
+    }
+    .description {
+      margin: 20px 0;
+      line-height: 22px;
+    }
+
+    .compoundTitle {
+      display: flex;
+      align-items: center;
+    }
+    .compound {
+      margin: 20px 0;
+      line-height: 22px;
+    }
+  }
+  p {
+    font-size: 18px;
+  }
+  button {
+    padding: 10px 15px;
+    background-color: var(--dark-deep-blue);
+    color: var(--font-white);
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    .imgDiv {
+      width: 40%;
+    }
+    .productInfo {
+      width: 60%;
+      margin: 0 10px;
+      .priceDiv {
+        margin: 10px 0;
+      }
+      .description {
+        margin: 10px 0;
+      }
+      .compound {
+        font-size: 12px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    .imgDiv {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+
+    .productInfo {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin: 15px;
+    .imgDiv {
+      width: 100%;
+    }
+    .productInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      .priceDiv {
+        .newPrice {
+          font-size: 16px;
+        }
+        .oldPrice {
+          font-size: 16px;
+        }
+      }
+      .compound {
+        font-size: 10px;
+      }
+    }
+  }
+}

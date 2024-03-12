@@ -1,0 +1,26 @@
+.cartWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  min-height: 95vh;
+
+  h1 {
+    margin: 30px;
+    color: var(--dark-deep-blue);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .cartWrapper {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cartWrapper {
+    margin: 0 10px;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}

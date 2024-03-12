@@ -1,0 +1,61 @@
+.contactsWrapper {
+  margin: 50px;
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-deep-blue);
+
+  // .iframeDiv {
+  //   max-width: 720px;
+  //   margin: 15px 0;
+  //   height: 600px;
+  // }
+
+  p {
+    margin: 5px 0;
+    font-weight: 300;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h2,
+  h3 {
+    margin: 20px 0;
+    font-weight: 700;
+  }
+  .workTime {
+    display: flex;
+    ul {
+      margin-right: 30px;
+    }
+    li {
+      list-style-type: none;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contactsWrapper {
+    margin: 30px;
+    // .iframeDiv {
+    //   height: 400px;
+    // }
+  }
+}
+@media screen and (max-width: 480px) {
+  .contactsWrapper {
+    margin: 30px 20px;
+    // .iframeDiv {
+    //   height: 300px;
+    // }
+  }
+}
+@media screen and (max-width: 320px) {
+  .contactsWrapper {
+    margin: 30px 10px;
+    // .iframeDiv {
+    //   height: 200px;
+    // }
+  }
+}

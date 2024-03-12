@@ -1,0 +1,135 @@
+.catalogWrapper {
+  max-width: 1440px;
+
+  .catalogCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 20px;
+    padding: 5px;
+    .imgDiv {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+
+    h3 {
+      margin: 5px;
+      font-weight: bold;
+    }
+  }
+
+  .filterAndProducts {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 30px;
+
+    .searchDiv {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .line {
+      width: 85%;
+      border: 1px solid var(--dark-black);
+      opacity: 0.3;
+      margin: 20px 50px 5px 50px;
+    }
+
+    .productsAndSearch {
+      width: 100%;
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 30px;
+      }
+    }
+
+    h1 {
+      margin: 0 50px 20px 50px;
+      color: var(--dark-deep-blue);
+    }
+    .chipCategory {
+      margin: 5px 50px;
+      background-color: var(--light-deep-blue);
+      color: var(--dark-deep-blue);
+      border: 1px solid var(--dark-deep-blue);
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .catalogWrapper {
+    .filterAndProducts {
+      .products {
+        max-width: 720px;
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .catalogWrapper {
+    .filterAndProducts {
+      max-width: 720px;
+      h1 {
+        margin: 30px;
+      }
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      .searchDiv {
+        max-width: 720px;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+      .productsAndSearch {
+        width: 100%;
+        .products {
+          margin: 0;
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalogWrapper {
+    max-width: 480px;
+    .filterAndProducts {
+      max-width: 480px;
+      .searchDiv {
+        .chip {
+          display: none;
+        }
+      }
+      .productsAndSearch {
+        width: 100%;
+        display: flex;
+        .products {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+      .line {
+        width: 100%;
+        margin: 20px 0 5px 0;
+      }
+    }
+  }
+}

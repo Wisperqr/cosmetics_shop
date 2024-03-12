@@ -1,0 +1,3 @@
+export const BLOGS_ACTION_TYPES = {
+  SET_ALL_BLOGS: "SET_ALL_BLOGS",
+};
